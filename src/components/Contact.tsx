@@ -63,7 +63,7 @@ export default function Contact() {
                 className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <FaEnvelope className="text-2xl mr-4" />
-                sagarpariyar345@email.com
+                sagarpariyar345@gmail.com
               </a>
             </div>
           </motion.div>
