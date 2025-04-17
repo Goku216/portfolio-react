@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 type FormData = {
   name: string;
@@ -16,8 +17,26 @@ export default function Contact() {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
-    // Handle form submission
+    const serviceID = "service_pd2fdzt";
+    const templateID = "template_fafwbdk";
+    const userID = "2disN1JOZaEZwz9_1";
+
+    const templateParams = {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, userID).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent successfully!");
+      },
+      (err) => {
+        console.error("FAILED...", err);
+        alert("Something went wrong, please try again.");
+      }
+    );
   };
 
   return (
