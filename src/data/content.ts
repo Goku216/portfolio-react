@@ -24,10 +24,10 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 1,
-    role: "Front-End Developer (Personal Projects)",
-    company: "Self-Initiated | Remote",
-    period: "2021 - Present",
-    description: " Developed and deployed multiple responsive web applications using React.js, JavaScript, and Tailwind CSS. Worked on dynamic components, API integrations, and state management using React hooks. Collaborated with online communities and peers to enhance UI/UX design and debug code. Gained hands-on experience with Git version control and responsive layouts."
+    role: "Front-End Developer Intern",
+    company: "Brahmabyte Lab | Kathmandu, Nepal",
+    period: "August 2025 - Present",
+    description: " Developed and deployed multiple responsive web applications using Next.js, Typescript, and Tailwind CSS. Worked on dynamic components, API integrations, and state management using React hooks. Collaborated with online communities and peers to enhance UI/UX design and debug code. Gained hands-on experience with Git version control and responsive layouts."
   },
   
 ];
